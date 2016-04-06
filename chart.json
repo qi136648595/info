@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD < -- ></-->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>统计页面</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />-->
+        <!--<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />-->
+        <!--<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
+        <link href="css/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/simple/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/css/uniform.default.css" rel="stylesheet" type="text/css" />
+        <!--<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />-->
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="js/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+        <link href="js/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <!--<link href="http://127.0.0.1/metronic_v4.5.2/theme/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />-->
+        
+        <!--<link href="assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />-->
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES 主题风格-->
+        <link href="css/global/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="css/global/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!--<link href="assets/global/css/components.min.css" rel="stylesheet" id="style_components___" type="text/css" />
+        <link href="assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />-->
+        <!-- END THEME GLOBAL STYLES 主题风格-->
+        <!-- BEGIN THEME LAYOUT STYLES 主题布局样式-->
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <!--<link href="http://127.0.0.1/metronic_v4.5.2/theme/assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />-->
+        <!--<link href="assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />-->
+        <!--<link href="assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color_1" />
+        <link href="assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />-->
+        <!-- END THEME LAYOUT STYLES 主题布局样式-->
+        <link rel="shortcut icon" href="favicon.ico" /> </head>
+    <!-- END HEAD -->
+
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner ">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" class="logo-default" /> </a>
+                    <div class="menu-toggler sidebar-toggler"> </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- BEGIN NOTIFICATION DROPDOWN -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="icon-bell"></i>
+                                <span class="badge badge-default"> 7 </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="external">
+                                    <h3>
+                                        <span class="bold">12 个</span> 通知</h3>
+                                    <a href="page_user_profile_1.html">查看全部</a>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">刚刚</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-success">
+                                                        <i class="fa fa-plus"></i>
+                                                    </span> 新用户注册. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">3 分钟前</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-danger">
+                                                        <i class="fa fa-bolt"></i>
+                                                    </span> 服务器被攻击. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">10 分钟前</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-warning">
+                                                        <i class="fa fa-bell-o"></i>
+                                                    </span> 请清除缓存. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">14 小时前</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-info">
+                                                        <i class="fa fa-bullhorn"></i>
+                                                    </span> 公告通知. </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END NOTIFICATION DROPDOWN -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <i class="icon-calendar"></i>
+                                <span class="badge badge-default"> 3 </span>
+                            </a>
+                            <ul class="dropdown-menu extended tasks">
+                                <li class="external">
+                                    <h3>你有
+                                        <span class="bold">12 个</span> 未完成的任务</h3>
+                                    <a href="app_todo.html">查看全部</a>
+                                </li>
+                                <li>
+                                    <ul class="dropdown-menu-list scroller" style="height: 175px;" data-handle-color="#637283">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="task">
+                                                    <span class="desc">系统升级v1.2 </span>
+                                                    <span class="percent">30%</span>
+                                                </span>
+                                                <span class="progress">
+                                                    <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">40% 完成</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="task">
+                                                    <span class="desc">程序部署1</span>
+                                                    <span class="percent">65%</span>
+                                                </span>
+                                                <span class="progress">
+                                                    <span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                        <span class="sr-only">65% 完成</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END TO DO DROPDOWN -->
+                        <!-- BEGIN USER LOGIN DROPDOWN -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <img alt="" class="img-circle" src="img/avatar3_small.jpg" />
+                                <span class="username username-hide-on-mobile"> 齐俊礼 </span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li>
+                                    <a href="page_user_profile_1.html">
+                                        <i class="icon-user"></i> 我的资料 </a>
+                                </li>
+                                <li>
+                                    <a href="app_calendar.html">
+                                        <i class="icon-calendar"></i> 我的记事本 </a>
+                                </li>
+                                <li class="divider"> </li>
+                                <li>
+                                    <a href="page_user_lock_1.html">
+                                        <i class="icon-lock"></i> 锁键屏保 </a>
+                                </li>
+                                <li>
+                                    <a href="page_user_login_1.html">
+                                        <i class="icon-key"></i> 注销 </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END USER LOGIN DROPDOWN -->
+                        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <li class="dropdown dropdown-quick-sidebar-toggler">
+                            <a href="javascript:;" class="dropdown-toggle">
+                                <i class="icon-logout"></i>
+                            </a>
+                        </li>
+                        <!-- END QUICK SIDEBAR TOGGLER -->
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <!-- BEGIN HEADER & CONTENT DIVIDER -->
+        <div class="clearfix"> </div>
+        <!-- END HEADER & CONTENT DIVIDER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- BEGIN SIDEBAR -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                        <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                        <li class="sidebar-toggler-wrapper hide">
+                            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                            <div class="sidebar-toggler"> </div>
+                            <!-- END SIDEBAR TOGGLER BUTTON -->
+                        </li>
+                        <li class="sidebar-search-wrapper">
+                            <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                            <form class="sidebar-search  " action="page_general_search_3.html" method="POST">
+                                <a href="javascript:;" class="remove">
+                                    <i class="icon-close"></i>
+                                </a>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="搜索...">
+                                    <span class="input-group-btn">
+                                        <a href="javascript:;" class="btn submit">
+                                            <i class="icon-magnifier"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </form>
+                            <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                        </li>
+                        <li class="nav-item start ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-home"></i>
+                                <span class="title">系统设置</span>
+                                <span class="selected"></span>
+                                <span class="arrow open"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item start">
+                                    <a href="dashboard_2.html" class="nav-link ">
+                                        <i class="icon-bar-chart"></i>
+                                        <span class="title">系统首页</span>
+                                        <span class="badge badge-success">1</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">商品信息</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-diamond"></i>
+                                <span class="title">商品</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="增加商品.html" class="nav-link ">
+                                        <span class="title">增加商品</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">商品分类</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="商品列表.html" class="nav-link ">
+                                        <span class="title">商品列表</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_buttons.html" class="nav-link ">
+                                        <span class="title">活动商品</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">订单信息</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-basket"></i>
+                                <span class="title">订单</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">订单列表</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">订单列表</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">订单列表</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_buttons.html" class="nav-link ">
+                                        <span class="title">订单列表</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">会员管理</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-users"></i>
+                                <span class="title">会员</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">会员列表</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">会员列表</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">会员列表</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_buttons.html" class="nav-link ">
+                                        <span class="title">会员列表</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">管理员</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-user"></i>
+                                <span class="title">管理员</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">修改管理员密码</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">管理用户组</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">统计</h3>
+                        </li>
+                        <li class="nav-item  active open">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-basket"></i>
+                                <span class="title">订单统计</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  active open">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">订单统计</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">订单</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-bar-chart"></i>
+                                <span class="title">销售额统计</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">销售</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">销售</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="heading">
+                            <h3 class="uppercase">活动</h3>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-present"></i>
+                                <span class="title">活动一</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">添加活动</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">活动列表</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-present"></i>
+                                <span class="title">活动二</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="ui_colors.html" class="nav-link ">
+                                        <span class="title">添加活动</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href="ui_general.html" class="nav-link ">
+                                        <span class="title">活动列表</span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                    <!-- END SIDEBAR MENU -->
+                </div>
+                <!-- END SIDEBAR -->
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <!-- BEGIN CONTENT BODY -->
+                <div class="page-content">
+                    <!-- BEGIN PAGE HEADER-->
+                    <!-- BEGIN THEME PANEL -->
+                    <div class="theme-panel hidden-xs hidden-sm">
+                        <!--<div class="toggler"> </div>
+                        <div class="toggler-close"> </div>-->
+                        <div class="theme-options">
+                            <div class="theme-option theme-colors clearfix">
+                                <span> 主题颜色</span>
+                                <ul>
+                                    <li class="color-default current tooltips" data-style="default" data-container="body" data-original-title="默认"> </li>
+                                    <li class="color-darkblue tooltips" data-style="darkblue" data-container="body" data-original-title="深蓝色"> </li>
+                                    <li class="color-blue tooltips" data-style="blue" data-container="body" data-original-title="蓝色"> </li>
+                                    <li class="color-grey tooltips" data-style="grey" data-container="body" data-original-title="灰色"> </li>
+                                    <li class="color-light tooltips" data-style="light" data-container="body" data-original-title="明亮"> </li>
+                                    <li class="color-light2 tooltips" data-style="light2" data-container="body" data-html="true" data-original-title="明亮 2"> </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- END THEME PANEL -->
+                    <!-- BEGIN PAGE BAR -->
+                    <div class="page-bar">
+                        <ul class="page-breadcrumb">
+                            <li>
+                                <a href="index.html">Home</a>
+                                <i class="fa fa-circle"></i>
+                            </li>
+                            <li>
+                                <span>统计</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END PAGE BAR -->
+                    <!-- BEGIN PAGE TITLE-->
+                   <!-- <h3 class="page-title"> 仪表板与统计</h3>-->
+                    <!-- END PAGE TITLE-->
+                    <!-- END PAGE HEADER-->
+                    <!-- BEGIN DASHBOARD STATS 1-->
+                    <div class="row margin-top-20">
+                    	<div class="col-md-12">
+                    		<div class="portlet ">
+                    			<!--<div class="portlet-title">
+                    				
+                    			</div>-->
+                    			 <div class="tabbable" style="margin-top: 0;">
+                                            <ul class="nav nav-tabs">
+                                                <!--<li class="active">
+                                                    <a href="#tab_general" data-toggle="tab"> 生意报告 </a>
+                                                </li>-->
+                                                <li class="active">
+                                                    <a href="#tab_meta" data-toggle="tab"> 订单统计 </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab_images" data-toggle="tab"> 商品销售明细 </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab_reviews" data-toggle="tab"> 销售指标分析</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab_history" data-toggle="tab"> 商品访问与购买比 </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab_userxs" data-toggle="tab"> 会员销售排行 </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab_userzz" data-toggle="tab"> 会员增长排行 </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab_general">
+                                                    <div class="alert alert-success">
+                                        					<i class="icon-bell"></i> 查看生意情况，您可以按月或按日分别查看商城订单交易量、交易额 </div>
+	                                                <div class="portlet light portlet-fit portlet-datatable bordered">
+		                                                <div class="portlet-title bg-grey-salt">
+						                                    <div class="caption">
+						                                        
+						                                        <span class="bg-font-grey-salt">商品列表</span>
+						                                    </div>
+		                                                </div>
+	                                                
+		                                                <div class="note note-info">
+					                                        <p><font class="OUTFOX_JTR_TRANS_NODE" rel="517" style="text-decoration: none;">按月统计</font></p>
+					                                    		
+		                                                </div>
+					                                    <!--table-->
+					                                    <!--end table-->
+					                                    <div class="note note-info">
+					                                        <p><font class="OUTFOX_JTR_TRANS_NODE" rel="517" style="text-decoration: none;">按月统计</font></p>
+					                                    </div>
+					                                    <!--table-->
+					                                    <!--end talbe-->
+	                                                </div>
+                                                
+                                                </div>
+                                                <div class="tab-pane" id="tab_images">
+                                                    商品销售明细
+                                                </div>
+                                                <div class="tab-pane " id="tab_reviews">
+                                                    销售指标分析
+                                                </div>
+                                                <div class="tab-pane " id="tab_history">
+                                                    商品访问与购买比
+                                                </div>
+                                                <div class="tab-pane " id="tab_userxs">
+                                                    会员销售排行
+                                                </div>
+                                                <div class="tab-pane " id="tab_userzz">
+                                                    会员增长排行
+                                                </div>
+                                                
+                                            </div>
+                                       </div>     
+                                            
+                                            
+                    		</div>
+                    	</div>
+                    </div>
+                   <div class="clearfix"></div>
+                    <!-- END DASHBOARD STATS 1-->
+                    
+                </div>
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+            <!-- BEGIN QUICK SIDEBAR -->
+            <a href="javascript:;" class="page-quick-sidebar-toggler">
+                <i class="icon-login"></i>
+            </a>
+           
+            <!-- END QUICK SIDEBAR -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="page-footer-inner" style=" font-family: arial;"> 2016 &copy; 银源亚太科技有限公司提供技术支持。</div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="js/morris.min.js" type="text/javascript"></script>
+        	
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="js/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="js/dashboard.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <!--改变布局颜色-->
+        <script src="js/demo.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+    </body>
+
+</html>
